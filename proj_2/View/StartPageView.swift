@@ -6,4 +6,8 @@
 //  Copyright © 2018 Yue. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class StartPageView: UIView {
+    
+}

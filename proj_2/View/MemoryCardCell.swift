@@ -6,4 +6,11 @@
 //  Copyright © 2018 Yue. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class MemoryCardCell : UICollectionViewCell {
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var memoryCardView: MemoryCardView!
+}

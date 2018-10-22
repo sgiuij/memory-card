@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8A1BC967217A707600B553F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC966217A707600B553F6 /* AppDelegate.swift */; };
-		8A1BC969217A707600B553F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC968217A707600B553F6 /* ViewController.swift */; };
 		8A1BC96C217A707600B553F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1BC96A217A707600B553F6 /* Main.storyboard */; };
 		8A1BC96E217A707700B553F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1BC96D217A707700B553F6 /* Assets.xcassets */; };
 		8A1BC971217A707700B553F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1BC96F217A707700B553F6 /* LaunchScreen.storyboard */; };
 		8A1BC97C217A707800B553F6 /* proj_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC97B217A707800B553F6 /* proj_2Tests.swift */; };
 		8A1BC987217A707800B553F6 /* proj_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC986217A707800B553F6 /* proj_2UITests.swift */; };
+		8A1BC999217DF23500B553F6 /* MemoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC998217DF23500B553F6 /* MemoryCard.swift */; };
+		8A1BC99B217DF24E00B553F6 /* MemoryDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC99A217DF24E00B553F6 /* MemoryDeck.swift */; };
+		8A1BC99D217DF79200B553F6 /* StartPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC99C217DF79200B553F6 /* StartPageView.swift */; };
+		8A1BC99F217E07CC00B553F6 /* MemoryCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC99E217E07CC00B553F6 /* MemoryCardCell.swift */; };
+		8A1BC9A1217E07F100B553F6 /* MemoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC9A0217E07F100B553F6 /* MemoryCardView.swift */; };
+		8A1BC9A3217E09F000B553F6 /* MemoryCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC9A2217E09F000B553F6 /* MemoryCardViewController.swift */; };
+		8A1BC9A5217E0A0800B553F6 /* MemoryDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC9A4217E0A0800B553F6 /* MemoryDeckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,6 @@
 /* Begin PBXFileReference section */
 		8A1BC963217A707600B553F6 /* proj_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proj_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1BC966217A707600B553F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A1BC968217A707600B553F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A1BC96B217A707600B553F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A1BC96D217A707700B553F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A1BC970217A707700B553F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		8A1BC982217A707800B553F6 /* proj_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proj_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1BC986217A707800B553F6 /* proj_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proj_2UITests.swift; sourceTree = "<group>"; };
 		8A1BC988217A707800B553F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1BC998217DF23500B553F6 /* MemoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCard.swift; sourceTree = "<group>"; };
+		8A1BC99A217DF24E00B553F6 /* MemoryDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDeck.swift; sourceTree = "<group>"; };
+		8A1BC99C217DF79200B553F6 /* StartPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageView.swift; sourceTree = "<group>"; };
+		8A1BC99E217E07CC00B553F6 /* MemoryCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardCell.swift; sourceTree = "<group>"; };
+		8A1BC9A0217E07F100B553F6 /* MemoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardView.swift; sourceTree = "<group>"; };
+		8A1BC9A2217E09F000B553F6 /* MemoryCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardViewController.swift; sourceTree = "<group>"; };
+		8A1BC9A4217E0A0800B553F6 /* MemoryDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDeckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,10 @@
 		8A1BC965217A707600B553F6 /* proj_2 */ = {
 			isa = PBXGroup;
 			children = (
-				8A1BC966217A707600B553F6 /* AppDelegate.swift */,
-				8A1BC968217A707600B553F6 /* ViewController.swift */,
-				8A1BC96A217A707600B553F6 /* Main.storyboard */,
-				8A1BC96D217A707700B553F6 /* Assets.xcassets */,
-				8A1BC96F217A707700B553F6 /* LaunchScreen.storyboard */,
-				8A1BC972217A707700B553F6 /* Info.plist */,
+				8A1BC994217DF18700B553F6 /* Model */,
+				8A1BC995217DF19200B553F6 /* View */,
+				8A1BC996217DF19800B553F6 /* Controller */,
+				8A1BC997217DF19F00B553F6 /* Supporting Files */,
 			);
 			path = proj_2;
 			sourceTree = "<group>";
@@ -123,6 +133,46 @@
 				8A1BC988217A707800B553F6 /* Info.plist */,
 			);
 			path = proj_2UITests;
+			sourceTree = "<group>";
+		};
+		8A1BC994217DF18700B553F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A1BC998217DF23500B553F6 /* MemoryCard.swift */,
+				8A1BC99A217DF24E00B553F6 /* MemoryDeck.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A1BC995217DF19200B553F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A1BC99C217DF79200B553F6 /* StartPageView.swift */,
+				8A1BC99E217E07CC00B553F6 /* MemoryCardCell.swift */,
+				8A1BC9A0217E07F100B553F6 /* MemoryCardView.swift */,
+				8A1BC96A217A707600B553F6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A1BC996217DF19800B553F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A1BC9A2217E09F000B553F6 /* MemoryCardViewController.swift */,
+				8A1BC9A4217E0A0800B553F6 /* MemoryDeckViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A1BC997217DF19F00B553F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A1BC966217A707600B553F6 /* AppDelegate.swift */,
+				8A1BC96F217A707700B553F6 /* LaunchScreen.storyboard */,
+				8A1BC972217A707700B553F6 /* Info.plist */,
+				8A1BC96D217A707700B553F6 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A1BC969217A707600B553F6 /* ViewController.swift in Sources */,
+				8A1BC9A1217E07F100B553F6 /* MemoryCardView.swift in Sources */,
 				8A1BC967217A707600B553F6 /* AppDelegate.swift in Sources */,
+				8A1BC9A3217E09F000B553F6 /* MemoryCardViewController.swift in Sources */,
+				8A1BC99D217DF79200B553F6 /* StartPageView.swift in Sources */,
+				8A1BC999217DF23500B553F6 /* MemoryCard.swift in Sources */,
+				8A1BC99F217E07CC00B553F6 /* MemoryCardCell.swift in Sources */,
+				8A1BC99B217DF24E00B553F6 /* MemoryDeck.swift in Sources */,
+				8A1BC9A5217E0A0800B553F6 /* MemoryDeckViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

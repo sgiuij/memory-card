@@ -51,20 +51,89 @@
             </objects>
             <point key="canvasLocation" x="720.53571428571422" y="131.8840579710145"/>
         </scene>
-        <!--View Controller-->
+        <!--Memory Deck View Controller-->
         <scene sceneID="uQc-QS-fxz">
             <objects>
-                <viewController id="r8F-SE-COq" sceneMemberID="viewController">
+                <viewController id="r8F-SE-COq" customClass="memoryDeckViewController" customModule="proj_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3p7-UH-00r" customClass="MemoryCardView" customModule="proj_2" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vuU-2P-tjV">
+                                <rect key="frame" x="34" y="102" width="862" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MYD-9t-jfI">
+                                    <size key="itemSize" width="73" height="87"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemoryCardCell" id="yIM-3s-QNt" customClass="MemoryCardCell" customModule="proj_2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="87"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="73" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bge-SK-TT1" customClass="MemoryCardView" customModule="proj_2" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="73" height="87"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Bge-SK-TT1" secondAttribute="height" multiplier="73:87" id="Q8u-wL-ITS"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Bge-SK-TT1" firstAttribute="leading" secondItem="yIM-3s-QNt" secondAttribute="leading" id="1l3-WQ-K8e"/>
+                                            <constraint firstItem="Bge-SK-TT1" firstAttribute="top" secondItem="yIM-3s-QNt" secondAttribute="top" id="LRj-da-kp2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bge-SK-TT1" secondAttribute="trailing" id="dLK-7c-O4I"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bge-SK-TT1" secondAttribute="bottom" id="i6k-bK-Blx"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="memoryCardView" destination="Bge-SK-TT1" id="Ctx-h9-3OC"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="r8F-SE-COq" id="vNf-fH-xzN"/>
+                                    <outlet property="delegate" destination="r8F-SE-COq" id="OeZ-Ty-yXl"/>
+                                </connections>
+                            </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Time:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6st-Jj-P4Q">
+                                <rect key="frame" x="34" y="55" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Score:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1VH-9e-03g">
+                                <rect key="frame" x="255" y="55" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H6P-3d-ueb">
+                                <rect key="frame" x="93" y="55" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jc3-dk-t0v">
+                                <rect key="frame" x="318" y="55" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KgD-9h-rfg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inY-TB-6db" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="132"/>
+            <point key="canvasLocation" x="1382.8125" y="131.8840579710145"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IND-VI-wcQ">
